@@ -1,0 +1,3022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 25.3.1">
+
+    <issue
+        id="CommitPrefEdits"
+        severity="Warning"
+        message="`SharedPreferences.edit()` without a corresponding `commit()` or `apply()` call"
+        category="Correctness"
+        priority="6"
+        summary="Missing `commit()` on `SharedPreference` editor"
+        explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
+        errorLine1="        editor = back.edit();"
+        errorLine2="                 ~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/global/Application.java"
+            line="44"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="CommitPrefEdits"
+        severity="Warning"
+        message="`SharedPreferences.edit()` without a corresponding `commit()` or `apply()` call"
+        category="Correctness"
+        priority="6"
+        summary="Missing `commit()` on `SharedPreference` editor"
+        explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
+        errorLine1="            editor = back.edit();"
+        errorLine2="                     ~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="173"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="CommitPrefEdits"
+        severity="Warning"
+        message="`SharedPreferences.edit()` without a corresponding `commit()` or `apply()` call"
+        category="Correctness"
+        priority="6"
+        summary="Missing `commit()` on `SharedPreference` editor"
+        explanation="After calling `edit()` on a `SharedPreference`, you must call `commit()` or `apply()` on the editor to save the results."
+        errorLine1="                editor = back.edit();"
+        errorLine2="                         ~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="808"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button17&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button17&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="32"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="33"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="33"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="32"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="33"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button16&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button16&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="40"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="41"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="41"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="40"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="41"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button14&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button14&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="46"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="47"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="47"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="46"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="47"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;customView_xLarge&quot; in layout &quot;activity_main&quot; is only present in the following layout configurations: layout-xlarge-land (missing from layout, layout-land, layout-large-land, layout-small-land, layout-xlarge)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="            android:id=&quot;@+id/customView_xLarge&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="61"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button15&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button15&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="79"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="101"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="101"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="98"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="101"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button8&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button8&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="105"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="135"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="135"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="132"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="135"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button9&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button9&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="121"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="152"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="152"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="148"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="152"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button10&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button10&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="138"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="170"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="170"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="165"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="170"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button11&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button11&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="171"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="204"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="204"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="198"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="204"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button12&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button12&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="187"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="222"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="222"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="214"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="222"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button13&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button13&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="203"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="238"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="238"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="230"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="238"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button5&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="233"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="268"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="268"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="260"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="268"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button6&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="249"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="284"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="284"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="276"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="283"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button7&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button7&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="268"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="301"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="301"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="295"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="300"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button1&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="315"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="351"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="350"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="342"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="350"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;aylbtn&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/aylbtn&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="335"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="370"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="368"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="362"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="385"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button3&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="349"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="386"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="385"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="379"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="402"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        severity="Warning"
+        message="The id &quot;button4&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-small-land (present in layout, layout-land, layout-large-land, layout-xlarge, layout-xlarge-land)"
+        category="Correctness"
+        priority="6"
+        summary="Inconsistent Layouts"
+        explanation="This check ensures that a layout resource which is defined in multiple resource folders, specifies the same set of widgets.
+
+This finds cases where you have accidentally forgotten to add a widget to all variations of the layout, which could result in a runtime crash for some resource configurations when a `findViewById()` fails.
+
+There *are* cases where this is intentional. For example, you may have a dedicated large tablet layout which adds some extra widgets that are not present in the phone version of the layout. As long as the code accessing the layout resource is careful to handle this properly, it is valid. In that case, you can suppress this lint check for the given extra or missing views, or the whole layout"
+        errorLine1="                android:id=&quot;@+id/button4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="370"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="407"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="406"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="400"
+            column="17"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="423"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        severity="Error"
+        message="Call requires API level 21 (current min is 16): `new android.view.View`"
+        category="Correctness"
+        priority="6"
+        summary="Calling new methods on older versions"
+        explanation="This check scans through all the Android API calls in the application and warns about any calls that are not available on *all* versions targeted by this application (according to its minimum SDK attribute in the manifest).
+
+If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
+
+If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
+
+If you are deliberately setting `android:` attributes in style definitions, make sure you place this in a `values-vNN` folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
+
+Similarly, you can use tools:targetApi=&quot;11&quot; in an XML file to indicate that the element will only be inflated in an adequate context."
+        errorLine1="        super(context, attrs, defStyleAttr, defStyleRes);"
+        errorLine2="        ~~~~~"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="48"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="OldTargetApi"
+        severity="Warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details."
+        category="Correctness"
+        priority="6"
+        summary="Target SDK attribute is not targeting latest version"
+        explanation="When your application runs on a version of Android that is more recent than your `targetSdkVersion` specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the `targetSdkVersion` is less than 14, your app may get an option button in the UI.
+
+To fix this issue, set the `targetSdkVersion` to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        url="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        urls="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html"
+        errorLine1="        targetSdkVersion 24"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/build.gradle"
+            line="9"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="Old buildToolsVersion 25.0.0; recommended version is 25.0.2 or later"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    buildToolsVersion &quot;25.0.0&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/build.gradle"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.android.support:appcompat-v7 than 24.2.1 is available: 25.2.0"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    compile &apos;com.android.support:appcompat-v7:24.2.1&apos;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/build.gradle"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ExportedService"
+        severity="Warning"
+        message="Exported service does not require permission"
+        category="Security"
+        priority="5"
+        summary="Exported service does not require permission"
+        explanation="Exported services (services which either set `exported=true` or contain an intent-filter and do not specify `exported=false`) should define a permission that an entity must have in order to launch the service or bind to it. Without this, any application can use this service."
+        errorLine1="        &lt;service"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/AndroidManifest.xml"
+            line="30"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="WorldWriteableFiles"
+        severity="Warning"
+        message="Using `MODE_WORLD_WRITEABLE` when creating files can be risky, review carefully"
+        category="Security"
+        priority="4"
+        summary="`openFileOutput()` or similar call passing `MODE_WORLD_WRITEABLE`"
+        explanation="There are cases where it is appropriate for an application to write world writeable files, but these should be reviewed carefully to ensure that they contain no private data, and that if the file is modified by a malicious application it does not trick or compromise your application."
+        errorLine1="        back = getSharedPreferences(&quot;Back&quot;, MODE_WORLD_WRITEABLE );"
+        errorLine2="                                            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/global/Application.java"
+            line="43"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="WorldWriteableFiles"
+        severity="Warning"
+        message="Using `MODE_WORLD_WRITEABLE` when creating files can be risky, review carefully"
+        category="Security"
+        priority="4"
+        summary="`openFileOutput()` or similar call passing `MODE_WORLD_WRITEABLE`"
+        explanation="There are cases where it is appropriate for an application to write world writeable files, but these should be reviewed carefully to ensure that they contain no private data, and that if the file is modified by a malicious application it does not trick or compromise your application."
+        errorLine1="        getBack = getSharedPreferences(&quot;Back&quot;, MODE_WORLD_WRITEABLE );"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="168"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="WorldWriteableFiles"
+        severity="Warning"
+        message="Using `MODE_WORLD_WRITEABLE` when creating files can be risky, review carefully"
+        category="Security"
+        priority="4"
+        summary="`openFileOutput()` or similar call passing `MODE_WORLD_WRITEABLE`"
+        explanation="There are cases where it is appropriate for an application to write world writeable files, but these should be reviewed carefully to ensure that they contain no private data, and that if the file is modified by a malicious application it does not trick or compromise your application."
+        errorLine1="            back = getSharedPreferences(&quot;Back&quot;, MODE_WORLD_WRITEABLE );"
+        errorLine2="                                                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="172"
+            column="49"/>
+    </issue>
+
+    <issue
+        id="WorldWriteableFiles"
+        severity="Warning"
+        message="Using `MODE_WORLD_WRITEABLE` when creating files can be risky, review carefully"
+        category="Security"
+        priority="4"
+        summary="`openFileOutput()` or similar call passing `MODE_WORLD_WRITEABLE`"
+        explanation="There are cases where it is appropriate for an application to write world writeable files, but these should be reviewed carefully to ensure that they contain no private data, and that if the file is modified by a malicious application it does not trick or compromise your application."
+        errorLine1="                back = getSharedPreferences(&quot;Back&quot;, MODE_WORLD_WRITEABLE );"
+        errorLine2="                                                    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="807"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="On SDK version 23 and up, your app data will be automatically backed up and restored on app install. Consider adding the attribute `android:fullBackupContent` to specify an `@xml` resource which configures which files to backup. More info: https://developer.android.com/training/backup/autosyncapi.html"
+        category="Security"
+        priority="3"
+        summary="AllowBackup/FullBackupContent Problems"
+        explanation="The `allowBackup` attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup
+
+By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.
+
+This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.
+
+Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.
+
+To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`.
+
+If not set to false, and if targeting API 23 or later, lint will also warn that you should set `android:fullBackupContent` to configure auto backup."
+        url="https://developer.android.com/training/backup/autosyncapi.html"
+        urls="https://developer.android.com/training/backup/autosyncapi.html,http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/AndroidManifest.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="            Paint p_horizontal = new Paint();"
+        errorLine2="                                 ~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/Tacktile/CustomView.java"
+            line="213"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="        Paint p_horizontal = new Paint();"
+        errorLine2="                             ~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/Tacktile/CustomView_xLarge.java"
+            line="127"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.mainbutton);"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="154"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="        bm1 = Bitmap.createScaledBitmap(b, wx, wy, false);"
+        errorLine2="              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="155"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="DrawAllocation"
+        severity="Warning"
+        message="Avoid object allocations during draw/layout operations (preallocate and reuse instead)"
+        category="Performance"
+        priority="9"
+        summary="Memory allocations within drawing code"
+        explanation="You should avoid allocating objects during a drawing or layout operation. These are called frequently, so a smooth UI can be interrupted by garbage collection pauses caused by the object allocations.
+
+The way this is generally handled is to allocate the needed objects up front and to reuse them for each drawing operation.
+
+Some methods allocate memory on your behalf (such as `Bitmap.create`), and these should be handled in the same way."
+        errorLine1="        paint = new Paint();"
+        errorLine2="                ~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="156"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        severity="Warning"
+        message="This `TypedArray` should be recycled after use with `#recycle()`"
+        category="Performance"
+        priority="7"
+        summary="Missing `recycle()` calls"
+        explanation="Many resources, such as TypedArrays, VelocityTrackers, etc., should be recycled (with a `recycle()` call) after use. This lint check looks for missing `recycle()` calls."
+        errorLine1="        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CustomView, 0, 0);"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/Tacktile/CustomView.java"
+            line="250"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        severity="Warning"
+        message="This `TypedArray` should be recycled after use with `#recycle()`"
+        category="Performance"
+        priority="7"
+        summary="Missing `recycle()` calls"
+        explanation="Many resources, such as TypedArrays, VelocityTrackers, etc., should be recycled (with a `recycle()` call) after use. This lint check looks for missing `recycle()` calls."
+        errorLine1="        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CustomView, 0, 0);"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/Tacktile/CustomView_Large.java"
+            line="114"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        severity="Warning"
+        message="This `TypedArray` should be recycled after use with `#recycle()`"
+        category="Performance"
+        priority="7"
+        summary="Missing `recycle()` calls"
+        explanation="Many resources, such as TypedArrays, VelocityTrackers, etc., should be recycled (with a `recycle()` call) after use. This lint check looks for missing `recycle()` calls."
+        errorLine1="        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CustomView, 0, 0);"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/Tacktile/CustomView_xLarge.java"
+            line="168"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="StaticFieldLeak"
+        severity="Warning"
+        message="Do not place Android context classes in static fields (static reference to `Application` which has field `context` pointing to `Context`); this is a memory leak (and also breaks Instant Run)"
+        category="Performance"
+        priority="6"
+        summary="Static Field Leaks"
+        explanation="A static field will leak contexts."
+        errorLine1="    private static Application instance;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/global/Application.java"
+            line="21"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.activity_main` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-large-land/activity_main.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-small-land/activity_main.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="2"
+            column="1"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge-land/activity_main.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.layout.activity_main_xlarge_land` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.arm4` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/arm4.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.asd` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/asd.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.audio` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio.PNG"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.audio1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.audio_down` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_down.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.audio_up` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_up.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.background_cursor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/background_cursor.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.backspace` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/backspace.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.balck_hole1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/balck_hole1.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.blach_hole` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/blach_hole.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.black_hole` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/black_hole.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.bluetr` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/bluetr.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.braille_five` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_five.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.braille_four` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_four.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.braille_six` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_six.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.braille_three` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_three.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.braille_two` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_two.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.browntr` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/browntr.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.ctrl` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/ctrl.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.activity_horizontal_margin` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;activity_horizontal_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/values/dimens.xml"
+            line="3"
+            column="12"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/values-w820dp/dimens.xml"
+            line="5"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.dimen.activity_vertical_margin` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="    &lt;dimen name=&quot;activity_vertical_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/values/dimens.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.enter` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/enter.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.fun_cursor` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_cursor.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.home` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/home.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.mipmap.home` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-hdpi/home.png"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-mdpi/home.png"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xhdpi/home.png"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/home.png"/>
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxxhdpi/home.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.na1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na1.PNG"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.na5` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na5.PNG"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.navigation` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.navigation_tr` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation_tr.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.normal` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/normal.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.pressed` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds."
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/pressed.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.qwer` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/qwer.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.redtr` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/redtr.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.tactile` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/tactile.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.while_hole` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/while_hole.png"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="144"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="153"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="171"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="177"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="180"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="186"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="177"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="186"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="183"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is useless (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Useless leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="        ^"
+        quickfix="studio,adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="192"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/arm4.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/arm4.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/asd.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/asd.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/audio.PNG` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio.PNG"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/audio1.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio1.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/audio_down.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_down.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/audio_up.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_up.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/backspace.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/backspace.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/balck_hole1.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/balck_hole1.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/blach_hole.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/blach_hole.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/black_hole.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/black_hole.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/bluetr.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/bluetr.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/bottom_painted.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/bottom_painted.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/browntr.jpg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/browntr.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/enter.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/enter.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/home.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/home.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/left_painted.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/left_painted.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/leftpage.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/leftpage.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/leftpage_click.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/leftpage_click.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/mainbutton.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/mainbutton.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/na1.PNG` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na1.PNG"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/na5.PNG` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na5.PNG"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/navigation.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/navigation_tr.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation_tr.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/qwer.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/qwer.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/redtr.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/redtr.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/right_painted.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/right_painted.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/rightpage.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/rightpage.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/rightpage_click.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/rightpage_click.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/tactile.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/tactile.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/top_painted.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/top_painted.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/volume_down.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_down.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/volume_down_click.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_down_click.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/volume_up.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_up.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/volume_up_click.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_up_click.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/while_hole.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon *really* is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="http://developer.android.com/guide/practices/screens_support.html"
+        urls="http://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/while_hole.png"/>
+    </issue>
+
+    <issue
+        id="IconExtension"
+        severity="Warning"
+        message="Misleading file extension; named `.jpg` but the file format is `png`"
+        category="Usability:Icons"
+        priority="3"
+        summary="Icon format does not match the file extension"
+        explanation="Ensures that icons have the correct file extension (e.g. a `.png` file is really in the PNG format and not for example a GIF file named `.png`.)">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/browntr.jpg"/>
+    </issue>
+
+    <issue
+        id="GoogleAppIndexingWarning"
+        severity="Warning"
+        message="App is not indexable by Google Search; consider adding at least one Activity with an ACTION-VIEW intent filter. See issue explanation for more details."
+        category="Usability"
+        priority="5"
+        summary="Missing support for Firebase App Indexing"
+        explanation="Adds URLs to get your app into the Google index, to get installs and traffic to your app from Google Search."
+        url="https://g.co/AppIndexing/AndroidStudio"
+        urls="https://g.co/AppIndexing/AndroidStudio"
+        errorLine1="    &lt;application"
+        errorLine2="    ^"
+        quickfix="studio">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/AndroidManifest.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="`mirshod/braille_pad/MainActivity$1#onTouch` should call `View#performClick` when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="        public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                       ~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/MainActivity.java"
+            line="360"
+            column="24"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="Custom view `mirshod/braille_pad/circleButton` overrides `onTouchEvent` but not `performClick`"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="    public boolean onTouchEvent(MotionEvent event) {"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="59"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="`mirshod/braille_pad/circleButton#onTouch` should call `View#performClick` when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Accessibility in Custom Views"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="    public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/java/mirshod/braille_pad/circleButton.java"
+            line="170"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="103"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="119"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="130"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="133"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="136"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="146"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="150"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="163"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="168"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="170"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="185"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="197"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main.xml"
+            line="201"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="203"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="212"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="220"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="228"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-land/activity_main.xml"
+            line="236"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="133"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="150"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="168"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="203"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="220"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge.xml"
+            line="236"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F1&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="139"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="156"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F3&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="174"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="209"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F5&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="226"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;F6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;F6&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout/activity_main_xlarge_land.xml"
+            line="242"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Consider adding `android:layout_marginStart=&quot;5dp&quot;` to better support right-to-left layouts"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.
+
+For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. *NOTE*: If your `minSdkVersion` is less than 17, you should add *both* the older left/right attributes *as well as* the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.
+
+(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="                android:layout_marginLeft=&quot;5dp&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/var/lib/jenkins/workspace/pad/app/src/main/res/layout-xlarge/activity_main.xml"
+            line="365"
+            column="17"/>
+    </issue>
+
+</issues>

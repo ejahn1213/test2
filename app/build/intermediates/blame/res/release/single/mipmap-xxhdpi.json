@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/tts_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/tts_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/enter.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/enter.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/backspace_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/backspace_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/enter_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/enter_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/power.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/power.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/power_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/power_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/home.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/home.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/fun_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/fun_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/backspace.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/backspace.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/qwer.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/qwer.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/tts.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/tts.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ctrl.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/ctrl.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/fun.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/fun.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/mipmap-xxhdpi/ctrl_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/mipmap-xxhdpi/ctrl_click.png"
+    }
+]

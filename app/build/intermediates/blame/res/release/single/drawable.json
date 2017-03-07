@@ -1,0 +1,370 @@
+[
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_switch_thumb_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_seekbar_track_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_tts.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_tts.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_btn_check_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/na5.PNG",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na5.PNG"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_space.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_space.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/normal.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/normal.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/navigation.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/browntr.jpg",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/browntr.jpg"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/blach_hole.jpg",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/blach_hole.jpg"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_two.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_two.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/volume_down_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_down_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/left_painted.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/left_painted.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_textfield_search_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/qwer.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/qwer.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/backspace.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/backspace.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/pressed.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/pressed.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_five.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_five.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/black_hole.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/black_hole.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_one.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_one.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_six.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_six.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/rightpage_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/rightpage_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/enter.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/enter.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/audio.PNG",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio.PNG"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_clear_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/volume_up.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_up.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/balck_hole1.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/balck_hole1.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_tab_indicator_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/volume_down.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_down.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_cab_background_top_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_three.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_three.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/audio_down.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_down.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/tactile.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/tactile.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/asd.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/asd.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_power.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_power.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_light.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/navigation_tr.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/navigation_tr.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ratingbar_small_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/rightpage.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/rightpage.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/home.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/home.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_volumedown.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_volumedown.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/volume_up_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/volume_up_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/audio1.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio1.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_cursor.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_cursor.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/na1.PNG",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/na1.PNG"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_text_cursor_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_search_api_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/shape.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/shape.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/selector.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/selector.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_ab_back_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/leftpage_click.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/leftpage_click.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_four.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_four.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/leftpage.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/leftpage.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_item_background_holo_dark.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/background_cursor.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/background_cursor.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/top_painted.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/top_painted.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_vector_test.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/redtr.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/redtr.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_shift.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_shift.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/mainbutton.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/mainbutton.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/bottom_painted.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/bottom_painted.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_pageleft.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_pageleft.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_btn_colored_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_seven.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_seven.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_volumeup.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_volumeup.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/bluetr.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/bluetr.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_dialog_material_background.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/arm4.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/arm4.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ratingbar_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/braille_eight.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/braille_eight.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/right_painted.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/right_painted.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/audio_up.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/audio_up.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/ctrl.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/ctrl.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/abc_btn_borderless_material.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/while_hole.png",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/while_hole.png"
+    },
+    {
+        "merged": "/var/lib/jenkins/workspace/pad/app/build/intermediates/res/merged/release/drawable/fun_pageright.xml",
+        "source": "/var/lib/jenkins/workspace/pad/app/src/main/res/drawable/fun_pageright.xml"
+    }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="102939927666507"
+    token="-4445034493728484992"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="369" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="406" />
+    <task
+        name="verifier"
+        duration="134" />
+
+    <artifact
+        location="C:\GoogleDrive\Lab\Project\tempProject\20170221_Braille_Pad_temp(multi key complete)\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="102939927666507"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\GoogleDrive\Lab\Project\tempProject\20170221_Braille_Pad_temp(multi key complete)\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
